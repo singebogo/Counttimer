@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CountClock.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CountClock.ico"
+IDI_ICON1               ICON                    "res\\alarm_clock_time_icon_209271_24x24.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CountClock"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CountClock 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2024",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_COUNTCLOCK_DIALOG DIALOGEX 0, 0, 378, 115
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | DS_CONTEXTHELP | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_CONTEXTHELP | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "CLOCK"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CTEXT           "",IDC_DOWN_1,326,10,45,16,SS_NOTIFY,WS_EX_TRANSPARENT
+    LTEXT           "倒计时(min):",IDC_STATIC,13,15,49,9
+    EDITTEXT        IDC_EDIT1,66,13,47,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "开始",IDC_COUNT,128,11,24,15
+    PUSHBUTTON      "计时0",IDC_BTN_COUNTER,47,36,25,14
+    CTEXT           "",IDC_DOWN,17,62,68,22,SS_NOTIFY,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_COUNTDOWN,108,62,68,21,SS_NOTIFY,WS_EX_TRANSPARENT
+    PUSHBUTTON      "同步",IDC_UPDATETIME,156,94,28,12
+    LTEXT           "........................................................",IDC_STATIC,7,84,178,8
+    CTEXT           "",IDC_STATIC_NETWORK,104,95,50,9,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "",IDC_STATIC_NOW,13,95,81,9,SS_CENTERIMAGE
+    LTEXT           "........................................................",IDC_STATIC,7,52,178,8
+    CTEXT           "",IDC_STATIC_COUNTER,85,39,74,12,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_TIMES,159,15,25,8
+    PUSHBUTTON      "",IDC_BTN_MUTIL,165,38,14,11
+    LTEXT           "........................................................",IDC_STATIC,7,26,178,8
+    PUSHBUTTON      "计时1",IDC_BTN_COUNT_1,220,14,26,12
+    CTEXT           "",IDC_STATIC_COUNT1,252,15,73,11
+    LTEXT           "........................................................",IDC_STATIC,190,26,185,8
+    CTEXT           "................................................................................................................",IDC_STATIC,7,0,368,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_1,11,37,35,76,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO2,190,14,30,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,0,186,114,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,188,0,187,114,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO3,190,38,30,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "计时2",IDC_BTN_COUNT_2,220,38,26,12
+    CTEXT           "",IDC_STATIC_COUNT2,252,41,73,11
+    CTEXT           "",IDC_DOWN_2,326,36,45,16,SS_NOTIFY,WS_EX_TRANSPARENT
+    LTEXT           "........................................................",IDC_STATIC,189,52,186,8
+    LTEXT           "........................................................",IDC_STATIC,188,77,187,8
+    COMBOBOX        IDC_COMBO4,190,65,30,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "计时3",IDC_BTN_COUNT_3,220,65,26,12
+    CTEXT           "",IDC_STATIC_COUNT3,252,69,73,11
+    CTEXT           "",IDC_DOWN_3,326,63,45,16,SS_NOTIFY,WS_EX_TRANSPARENT
+    LTEXT           "........................................................",IDC_STATIC,189,105,187,8
+    COMBOBOX        IDC_COMBO5,190,91,30,56,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "计时4",IDC_BTN_COUNT_4,220,91,26,12
+    CTEXT           "",IDC_STATIC_COUNT4,252,95,73,11
+    CTEXT           "",IDC_DOWN_4,326,89,45,16,SS_NOTIFY,WS_EX_TRANSPARENT
+    LTEXT           "........................................................",IDC_STATIC,7,105,179,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "CountClock Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CountClock"
+            VALUE "LegalCopyright", "版权所有 (C) 2024"
+            VALUE "OriginalFilename", "CountClock.EXE"
+            VALUE "ProductName", "CountClock 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COUNTCLOCK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 CountClock(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CountClock.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

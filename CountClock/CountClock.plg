@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CountClock - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/CountClock.res" /d "NDEBUG" /d "_AFXDLL" "D:\Workspace\vc\CountClock\CountClock.rc"" 
+Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPCDA9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/CountClock.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Workspace\vc\CountClock\CountClock.cpp"
+"D:\Workspace\vc\CountClock\CountClockDlg.cpp"
+"D:\Workspace\vc\CountClock\ping.cpp"
+]
+Creating command line "cl.exe @C:\Users\Administrator\AppData\Local\Temp\RSPCDA9.tmp" 
+Creating temporary file "C:\Users\Administrator\AppData\Local\Temp\RSPCDB9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/CountClock.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Workspace\vc\CountClock\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Administrator\AppData\Local\Temp\RSPCDB9.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/CountClock.pdb" /machine:I386 /out:"Release/CountClock.exe"  .\Release\CountClock.obj .\Release\CountClockDlg.obj .\Release\ping.obj .\Release\StdAfx.obj .\Release\CountClock.res "
+<h3>Output Window</h3>
+Compiling resources...
+
+
+D:\Workspace\vc\CountClock\CountClock.rc (19): error RC2144 : PRIMARY LANGUAGE ID not a number
+
+
+D:\Workspace\vc\CountClock\CountClock.rc (67): error RC2135 : file not found: 128
+
+
+D:\Workspace\vc\CountClock\CountClock.rc (74): error RC2135 : file not found: 100
+
+
+
+
+
+
+Error executing rc.exe.
+
+
+
+<h3>Results</h3>
+CountClock.exe - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
